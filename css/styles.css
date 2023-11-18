@@ -1,3 +1,4 @@
+/* ============== COMMON STYLES ============== */
 body {
     font-family: 'Roboto', sans-serif;
     color: #434455;
@@ -10,15 +11,80 @@ body {
 button {
     cursor: pointer;
 }
-ul {
+ul, ol {
     list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
-a:link {
+a {
     text-decoration: none;
 }
 
-/* HEADER */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.section-title {
+    color: #2E2F42;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+/* ============== HEADER ============== */
+
+.page-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+}
 
 .logo {
     color: #4D5AE5;
@@ -28,18 +94,29 @@ a:link {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    padding-right: 76px;
+
 }
 
 .logo-studio {
     color: #2e2f42;
 }
 
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
 .menu-link {
+    display: flex;
     color: #2E2F42;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 0;
+    
+
 }
 
 .menu-link:hover,
@@ -48,10 +125,19 @@ a:link {
 }
 
 .contacts {
-    font-style: normal
-}
+    font-style: normal;
+    display: flex;
+    align-items: center;
 
-.contacts-link{
+    
+ }
+
+.contacts-list {
+    display: flex;
+    gap: 40px;
+    }
+
+.contacts-link {
     color: #434455;
     font-size: 16px;
     font-weight: 400;
@@ -64,7 +150,7 @@ a:link {
     color: #404BBF;
 }
 
-/* HERO 1 SECTION */
+/* ============== HERO 1 SECTION ============== */
 .main-section {
     background-color: #2e2f42
 }
@@ -92,17 +178,7 @@ a:link {
     background-color: #404BBF;
 }
 
-/* BENEFITS 2 SECTION */
-
-.benefits-title {
-    color: #2E2F42;
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-}
+/* ============== BENEFITS 2 SECTION ============== */
 
 .benefits-list-title {
     color: #2E2F42;
@@ -119,17 +195,7 @@ a:link {
     letter-spacing: 0.02em;
 }
 
-/* OUR TEAM 3 SECTION */
-
-.our-team-title {
-    color: #2E2F42;
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-}
+/* ============== OUR TEAM 3 SECTION ============== */
 
 .our-team-section {
     background:#F4F4FD;
@@ -155,17 +221,8 @@ a:link {
 
 }
 
-/* OUR PORTFOLIO 4 SECTION */
+/* ============== OUR PORTFOLIO 4 SECTION ============== */
 
-.our-portfolio-title {
-    color: #2E2F42;
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-}
 
 .our-portfolio-list-title {
     color: #2E2F42;
@@ -182,7 +239,7 @@ a:link {
     letter-spacing: 0.02em;
 }
 
-/* FOOTER */
+/* ============== FOOTER ============== */
 
 .footer {
     background: #2E2F42;
