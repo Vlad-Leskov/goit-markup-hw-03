@@ -59,7 +59,7 @@ img {
     padding: 0 15px;
 }
 
-.section {
+.container-section {
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -73,7 +73,7 @@ img {
     letter-spacing: 0.02em;
     text-transform: capitalize;
 }
-
+/* ========== COMMON STYLES =========== */
 /* ============== HEADER ============== */
 
 .header {
@@ -193,7 +193,18 @@ img {
     background-color: #404BBF;
 }
 
+/* ============== HERO 1 SECTION ============== */
 /* ============== BENEFITS 2 SECTION ============== */
+
+.benefits-list {
+    display: flex;
+    gap: 24px;
+
+}
+
+.benefits-list-item {
+    width: calc((100% - 72px) / 4) ;
+}
 
 .benefits-list-title {
     color: #2E2F42;
@@ -201,6 +212,7 @@ img {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .benefits-list-text {
