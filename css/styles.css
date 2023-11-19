@@ -156,7 +156,9 @@ img {
 
 /* ============== HERO 1 SECTION ============== */
 .main-section {
-    background-color: #2e2f42
+    background-color: #2e2f42;
+    padding: 188px 0;
+    
 }
 
 .main-title {
@@ -166,15 +168,24 @@ img {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 1.12px;
+    max-width: 496px;
+    margin: 0 auto;
+    
 }
 
 .button-order-services {
+    display: block;
     background: #4D5AE5;
     color: #FFF;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    margin: 48px auto 0;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
 }
 
 .button-order-services:hover,
